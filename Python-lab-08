@@ -1,0 +1,220 @@
+
+
+
+NAME  :- 	ANKIT - DAGAR
+ 
+CLASS  :-  CSE (4-‘A’)
+
+ROLL NO.:- 2K18CSUN01053
+
+SUBJECT :- PYTHON  ( LAB-08  )
+
+
+-------------------------------------------------------------------------------------------------
+1.	Write a Python program that create a class tringle and define two methods, create_triangle() and print_sides().
+#Q1) Ankit_Dagar
+class triangle:
+    
+    def create_triangle(self,side1,side2,side3):
+        self.a=side1
+        self.b=side2
+        self.c=side3
+        print(self.a)
+        
+    def print_slide(self):
+        print(self.a)
+        print(self.b)
+        print(self.c)
+        
+obj=triangle()
+obj.create_triangle(1,2,3)
+obj.print_slide()
+
+-------------------------------------------------------------------------------------------------
+2.	Write a Python program to create a class with two methods get_String() and print_String().
+#Q2) Ankit_Dagar
+class  alpha:
+    
+    def get_string(self,alpha1,alpha2):
+        self.a=alpha1
+        self.b=alpha2
+        
+    def print_String(self):
+        print(self.a)
+        print(self.b)
+        
+obj2=alpha()
+obj2.get_string(a,b)
+obj2.print_String()
+-------------------------------------------------------------------------------------------------
+
+3.	Write a Python program to create a class Rectangle that takes the parameter length and width. The class should also contain a method for computing its perimeter.
+#Q3 Ankit_Dagar
+class rectangle:
+    def rect_values(self,l,w):
+        self.lenght=a
+        self.width=b
+        
+    def perimeter(self):
+        self.per=2*(self.lenght+self.width)
+        return(self.per)
+    
+a=int(input("enter a "))
+b=int(input("enter b "))
+
+r1=rectangle()
+r1.rect_values(a,b)
+k=r1.perimeter()
+print("perimeter is",k)
+-------------------------------------------------------------------------------------------------
+4.	Write a Python program to create a class Circle  that takes the parameter radius. The class should also contain two methods for computing its area & perimeter respectively. Use constructor to implement initialization of parameters
+#Q4 Ankit_Dagar
+class circle:
+    
+    def circle_area(self,r):
+        self.radius=r
+        self.area=(3.14)*(r)*(r)
+        return(self.area)
+        
+    def circle_perimeter(self):
+        self.perimeter=2*(3.14)*(r)
+        return(self.perimeter)
+    
+r=int(input("Enter the radius of Circle, r = "))
+
+obj4=circle()
+k=obj4.circle_area(r)
+m=obj4.circle_perimeter()
+print("The AREA of the circle is :- ",k)
+print("The PERIMETER of the Circle is :- ",m)
+
+
+--------------------------------------------------------------------------------------------------
+5.Create a Cricle class and intialize it with radius. Make two methods getArea and getCircumference inside this class.
+#Q5 Ankit_Dagar
+class circle:
+    
+    def getArea(self,r):
+        self.radius=r
+        self.area=(3.14)*(r)*(r)
+        return(self.area)
+        
+    def getCircumference(self):
+        self.perimeter=2*(3.14)*(r)
+        return(self.perimeter)
+    
+r=float(input("Enter the radius of Circle, r = "))
+
+obj4=circle()
+k=obj4.getArea(r)
+m=obj4.getCircumference()
+print("The area of the circle is :- ",k)
+print("The Circumference of the Circle is :- ",m)
+
+-----------------------------------------------------------------------------------------------
+6. Create a Temprature class. Make two methods : 1. convertFahrenheit - It will take celsius and will print it into Fahrenheit. 2. convertCelsius - It will take Fahrenheit and will convert it into Celsius.
+#Q6 Ankit_dagar
+class Temprature:
+    F1=0
+    F2=0
+    C1=0
+    C2=0
+    def convertFahrenheit(self,F1,C2):
+        self.fra1=F1
+        self.cel2=C2
+        
+    def convertCelsius(self):
+        self.fra2=(9/5)*(self.cel2)+32 
+        self.cel1=(5/9)*((self.fra1)-32) #(°F − 32) × 5/9 = °C
+        print("\nThe Fahrenheit is ",self.fra2)
+        print("The celcius ",self.cel1)
+        
+F1=int(input("Enter Fahrenheit temp :- "))
+C2=int(input("Enter Celcius temp :- "))
+
+obj6=Temprature()
+m=obj6.convertFahrenheit(F1,C2)
+k=obj6.convertCelsius()
+-----------------------------------------------------------------------------------------------
+7. Create a Student class and initialize it with name and roll number. Make methods to : 1. Display - It should display all information of the student. 2. setAge - It should assign age to student. 3. setMarks - It should assign marks to the student.
+#Q(7). Ankit_Dagar
+class Student():    
+    def __init__(self,name,roll):
+        self.name = name
+        self.roll= roll
+        self.marks=marks
+        
+    def display(self):
+        print ("\nThe NAME is :--> Ankit")
+        print ("& Your ROLL is :--> 2K18CSUN01053 ")
+        
+        
+        
+    def setAge(self,age):
+        self.age=age
+        age=input("Enter Your Age :- ")
+        
+    def setMarks(self,marks):
+        self.marks = marks
+        marks=input("Enter you mark :- ")
+        
+        
+name=((()))
+roll= ()
+marks=((()))
+age=((()))
+
+obj10=Student(name,roll)
+obj10.setAge(age)
+obj10.setMarks(marks)
+obj10.display()
+obj10.setAge(age)
+obj10.setMarks(marks)
+------------------------------------------------------------------------------------------------
+8. Create a Time class and initialize it with hours and minutes. 1. Make a method addTime which should take two time object and add them. E.g.- (2 hour and 50 min) + (1 hr and 20 min) is (4 hr and 10 min) 2. Make a method displayTime which should print the time. 3. Make a method DisplayMinute which should display the total minutes in the Time. E.g.- (1 hr 2 min) should display 62 minute.
+#Q.(8) Ankit_Dagar
+class Time:
+    
+    def _inti_(self):
+        self.hour1=hour1
+        self.mins1=mins1
+        self.hour2=hour2
+        self.mins2=mins2
+        
+    def addTime(self):
+        self.hour=(self.hour1)+(self.hour2)
+        self.mins=(self.mins1)+(self.mins2)
+        if (self.mins)/60 >= 1:
+            m=((self.mins)/60)
+            k=(self.hour)+(int(m))
+            l=((m)-(int(m)))*60
+            print("The Total is ",k,"Hours & ",int(l),"Minutes")
+        else:
+            print("Total is ",self.hour,"hour",self.mins,"minutes")
+        
+    def DisplayMinute(self):
+        self.mins3=(self.hour*60)+(self.mins)
+        print("\nThe total mintues ",self.mins3,"minutes")
+
+hour1=int(input("Enter First Hour :- "))        
+mins1=int(input("Enter First Minutes :- "))
+hour2=int(input("\nEnter Second hours :- "))
+mins2=int(input("Enter Second Minutes :- "))
+
+obj12=Time()
+obj12._inti_()
+obj12.addTime()
+obj12.DisplayMinute()
+------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+9. Write a Python class to reverse a string word by word
+#Q9 Ankit_Dagar
+
+class py_solution:
+    def reverse_words(self, s):
+        return ' '.join(reversed(s.split()))
+print(py_solution().reverse_words('BEST IS ANKIT-DAGAR')).
+
+-------------------------------------------------------------------------------------
